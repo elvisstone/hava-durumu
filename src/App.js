@@ -25,7 +25,7 @@ function App() {
     }
   };
 
-  const getBackgroundVideo = () => {
+  let getBackgroundVideo = () => {
     if (!weatherData) return 'clear.mp4';
     const mainWeather = weatherData.weather[0].main.toLowerCase();
 
